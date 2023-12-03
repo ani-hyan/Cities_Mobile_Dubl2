@@ -26,7 +26,6 @@ class WeatherViewModel : ViewModel() {
         private val _selectedTemperatureUnit = MutableLiveData<TemperatureUnit>()
         val selectedTemperatureUnit: LiveData<TemperatureUnit> get() = _selectedTemperatureUnit
 
-        // Provide a function to set the selectedTemperatureUnit
         fun setSelectedTemperatureUnit(unit: TemperatureUnit) {
             _selectedTemperatureUnit.value = unit
         }
